@@ -1,0 +1,99 @@
+require 'bigdecimal'
+
+require 'bigdecimal/util'
+
+ 
+
+ 
+
+ 
+
+print "enter proposed AV"
+
+               proposed_av = gets.chomp().to_i
+
+print "enter reduced AV"
+
+               reduced_av = gets.chomp().to_i
+
+print "enter state equalizer without decimal"
+
+               c = gets.chomp().to_i.to_f
+
+ 
+
+state_eq = c / 10000
+
+              
+
+print "enter tax rate, without decimal"
+
+               a = gets.chomp().to_i.to_f
+
+ 
+
+tax_rate = a / 100000
+
+ 
+
+print "what year of the triennial is this?"
+
+               yr_of_tri = gets.chomp()
+
+ 
+
+print "enter fee percentage, without decimal"
+
+               b = gets.chomp().to_f.to_d
+
+ 
+
+fee_rate = (b / 100)
+
+ 
+
+proposed_tax = (proposed_av * state_eq * tax_rate).to_d.truncate(2).to_f
+
+reduced_tax = (reduced_av * state_eq * tax_rate).to_d.truncate(2).to_f
+
+ 
+
+total_reduction_av = proposed_av - reduced_av
+
+total_reduction_tax = (proposed_tax - reduced_tax).to_d.truncate(2).to_f
+
+fee = (total_reduction_tax * fee_rate).to_d.truncate(2).to_f
+
+ 
+
+ 
+
+ 
+
+if yr_of_tri == "1"
+
+multi_yr_cut = (total_reduction_tax * 3).to_d.truncate(2).to_f
+
+elsif yr_of_tri == "2"
+
+multi_yr_cut = (total_reduction_tax * 2).to_d.truncate(2).to_f
+
+else
+
+multi_yr_cut = "one year only"
+
+end
+
+ 
+
+puts "your proposed tax is #{proposed_tax}."
+
+puts "your reduced tax is #{reduced_tax}."
+
+puts "your 1 yr estimated tax savings are #{total_reduction_tax}."
+
+puts "your multi-yr tax savings are #{multi_yr_cut}."
+
+puts "your total reduction in AV is #{total_reduction_av}."
+
+puts "your fee is #{fee}."
