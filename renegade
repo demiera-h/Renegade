@@ -43,7 +43,7 @@ print "what year of the triennial is this?"
 
  
 
-print "enter fee percentage, without decimal"
+print "enter fee percentage"
 
                b = gets.chomp().to_f.to_d
 
