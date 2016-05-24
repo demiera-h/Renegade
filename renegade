@@ -9,15 +9,15 @@ require 'green_shoes'
 
  
 
-print "enter proposed AV"
+print "enter proposed AV: "
 
                proposed_av = gets.chomp().to_i
 
-print "enter reduced AV"
+print "enter reduced AV: "
 
                reduced_av = gets.chomp().to_i
 
-print "enter state equalizer without decimal"
+print "enter state equalizer without decimal: "
 
                c = gets.chomp().to_i.to_f
 
@@ -27,7 +27,7 @@ state_eq = c / 10000
 
               
 
-print "enter tax rate, without decimal"
+print "enter tax rate, without decimal: "
 
                a = gets.chomp().to_i.to_f
 
@@ -43,7 +43,7 @@ print "what year of the triennial is this?"
 
  
 
-print "enter fee percentage"
+print "enter fee percentage: "
 
                b = gets.chomp().to_f.to_d
 
