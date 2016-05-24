@@ -87,14 +87,14 @@ end
 
  
 
-puts "your proposed tax is #{proposed_tax}."
+puts "your proposed tax is: #{proposed_tax}."
 
-puts "your reduced tax is #{reduced_tax}."
+puts "your reduced tax is: #{reduced_tax}."
 
-puts "your 1 yr estimated tax savings are #{total_reduction_tax}."
+puts "your 1 yr estimated tax savings are: #{total_reduction_tax}."
 
-puts "your multi-yr tax savings are #{multi_yr_cut}."
+puts "your multi-yr tax savings are: #{multi_yr_cut}."
 
-puts "your total reduction in AV is #{total_reduction_av}."
+puts "your total reduction in AV is: #{total_reduction_av}."
 
-puts "your fee is #{fee}."
+puts "your fee is:  #{fee}."
