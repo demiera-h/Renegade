@@ -1,0 +1,11 @@
+confirm("I hope you're ready to play FIND THE PEANUT")
+var peanut = prompt("Do you have the peanut?")
+if(peanut == "yes")
+{
+	console.log("Why do you have the peanut?! Go hide it!");
+	}
+	else
+	{	console.log("Now you're getting it. No one has the peanut");
+	}
+console.log("You have played FIND THE PEANUT.");
+
