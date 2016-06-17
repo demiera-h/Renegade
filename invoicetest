@@ -1,0 +1,34 @@
+require 'green_shoes'
+require 'bigdecimal'
+require 'bigdecimal/util'
+
+class Invoice 
+def initialize(prop_av, red_av, state_eq, tax_rate, tri_yr, fee_per)
+  @prop_av = prop_av
+  @red_av = red_av
+  @state_eq = state_eq
+  @tax_rate = tax_rate #needs to be bigdecimal
+  @tri_yr = tri_yr #needs to be bigdecimal
+  @fee_per = fee_per #needs to be bigdecimal
+
+  @reduction_av = @prop_av - @red_av 
+  @proposed_tax = @prop_av * @state_eq * @tax_rate
+  @reduced_tax = @red_av * @state_eq * @tax_rate
+  @tax_savings = @proposed_tax - @reduced_tax
+end
+
+#keep using instance variables throughout the program
+
+def show
+  puts "Your reduced AV is: #{@reduction_av}."
+  puts "Your tax savings are : #{@tax_savings}."
+end
+end
+
+Invoice.new(30000,20000,2,0.06,1,0.50).show 
+
+#this works fine for what it is. Next steps:
+# 1. Convert all to bigdecimal
+# 2. figure out how to create new invoice from the command line or from the program
+# 3. incorporate the shell from greenshoestest.rb as the GUI
+# 4. calculate button
