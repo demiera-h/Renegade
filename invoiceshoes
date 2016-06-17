@@ -1,0 +1,23 @@
+require 'green_shoes'
+require 'bigdecimal'
+require 'bigdecimal/util'
+
+
+Shoes.app(title:"Renegade Elite") do
+  flow do
+    para "Welcome to Renegade Elite", :size => 20, :height =>200
+  end
+  flow :height => 100 do
+end
+
+  flow do
+  @e=edit_line "Enter Proposed AV", :width =>400
+    end
+
+  @a=edit_line "Enter Reduced AV", :width =>400
+  @a=edit_line "Enter State Equalizer", :width =>400
+  @a=edit_line "Enter Tax Rate", :width =>400
+  @b=edit_line "Enter Year of Tri (1, 2 or 3)", :width =>400
+  @c=edit_line "Enter Fee Percentage", :width =>400
+
+  end
