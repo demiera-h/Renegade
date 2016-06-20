@@ -6,7 +6,7 @@ class Invoice
 def initialize(prop_av, red_av, state_eq, tax_rate, tri_yr, fee_per)
   @prop_av = prop_av
   @red_av = red_av
-  @state_eq = state_eq
+  @state_eq = state_eq #needs to be bigdecimal
   @tax_rate = tax_rate #needs to be bigdecimal
   @tri_yr = tri_yr #needs to be bigdecimal
   @fee_per = fee_per #needs to be bigdecimal
