@@ -30,5 +30,6 @@ Invoice.new(30000,20000,2,0.06,1,0.50).show
 #this works fine for what it is. Next steps:
 # 1. Convert all to bigdecimal
 # 2. figure out how to create new invoice from the command line or from the program
-# 3. incorporate the shell from greenshoestest.rb as the GUI
-# 4. calculate button
+# 3. get figures from user to fill the array needed to create a new invoice
+# 4. incorporate the shell from greenshoestest.rb as the GUI
+# 5. calculate button
