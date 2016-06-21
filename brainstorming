@@ -1,0 +1,17 @@
+require 'bigdecimal'
+require 'bigdecimal/util'
+
+# requires division
+
+print "enter state equalizer without decimal: "
+  c = gets.chomp().to_i.to_f
+state_eq = c / 10000
+puts state_eq # => 2.6685
+
+# does not require division 
+
+print "enter state equalizer, with decimal: "
+	b = BigDecimal.new(gets.chomp())
+puts b.to_f # => 2.6685
+
+# both of these output the same answer - so what's the difference?
