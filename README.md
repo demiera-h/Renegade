@@ -4,4 +4,6 @@ The renegadeGUI file is running green_shoes, and contains the GUI. Not ready to 
 
 The renegadeClassMethods file is where I'm taking the raw calculations and making them into methods and classes. It is intended to be a more advanced version of the renegadeRawCalculations file. Still needs a lot of work; notes in file. 
 
+The brainstorming file is where I dump new methods and concepts that I'm exploring, but not ready to implement in the RawCalculations or ClassMethods files.
+
 This program was started in February 2016, for anyone who cares. It is written to calculate a particular kind of invoice. 
